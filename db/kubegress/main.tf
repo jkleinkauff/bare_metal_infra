@@ -1,4 +1,4 @@
-resource "helm_release" "jhodb" {
+resource "helm_release" "pg_db" {
   name  = var.name
   chart = "${path.module}/custom-chart"
 
