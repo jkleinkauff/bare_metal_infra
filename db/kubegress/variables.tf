@@ -43,4 +43,3 @@ variable "max_connections" {
   description = "Max Connections"
   default     = 50
 }
-
