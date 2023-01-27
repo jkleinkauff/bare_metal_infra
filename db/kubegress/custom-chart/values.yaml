@@ -1,0 +1,14 @@
+size: ${size}
+configMapName: mypostgres-conf
+enableBackup: ${enable_backup}
+backupSchedule: "0 */24 * * *"
+customPGImage: "postgres:14.4-alpine"
+pvc_bkp_name: pg-${name}-pvc-bkp 
+replicas: ${replicas}
+max_connections: ${max_connections}
+wal_level: "${wal_level}"
+logging_collector: true
+log_statement: 'ddl'
+db_name: "${db_name}"
+db_user: "${db_user}"
+db_password: "${db_password}"
