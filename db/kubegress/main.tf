@@ -1,5 +1,5 @@
 resource "helm_release" "pg_db" {
-  name  = var.name
+  name  = "${var.name}-pg-db"
   chart = "${path.module}/custom-chart"
 
   namespace = var.namespace

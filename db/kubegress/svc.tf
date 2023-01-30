@@ -7,7 +7,7 @@ data "kubernetes_service" "pg_current_svc" {
 
 resource "kubernetes_service" "pg_external_svc" {
   metadata {
-    name      = "pg-${var.name}-external-nodeport"
+    name      = "${var.name}-pg-db-external-nodeport"
     namespace = var.namespace
   }
   spec {
@@ -28,7 +28,7 @@ resource "kubernetes_service" "pg_external_svc" {
 
 resource "kubernetes_service" "pg_external_replica_svc" {
   metadata {
-    name      = "pg-${var.name}-external-replica-nodeport"
+    name      = "${var.name}-pg-db-external-nodeport-replica"
     namespace = var.namespace
   }
   spec {
