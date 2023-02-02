@@ -17,8 +17,8 @@ resource "kubernetes_service" "pg_external_svc" {
     }
     session_affinity = "None"
     port {
-      port      = 5432
-    #   node_port = 32282
+      port = 5432
+      #   node_port = 32282
     }
 
     type = "NodePort"
@@ -38,8 +38,8 @@ resource "kubernetes_service" "pg_external_replica_svc" {
     }
     session_affinity = "None"
     port {
-      port      = 5432
-    #   node_port = 32288
+      port = 5432
+      #   node_port = 32288
     }
 
     type = "NodePort"

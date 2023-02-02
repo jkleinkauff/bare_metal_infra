@@ -43,3 +43,13 @@ variable "max_connections" {
   description = "Max Connections"
   default     = 50
 }
+
+variable "create_airbyte_connection" {
+  description = "Tries to create an Airbyte Source in a previous deployed Airbyte"
+  default     = false
+}
+
+variable "airbyte_workspace_id" {
+  description = "Airbyte workspace id"
+  default = ""
+}
