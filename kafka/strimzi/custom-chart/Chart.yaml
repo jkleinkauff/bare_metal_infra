@@ -1,0 +1,5 @@
+apiVersion: v2
+name: kafka-cluster
+type: application
+version: 0.1.4
+appVersion: "1.0.0"
