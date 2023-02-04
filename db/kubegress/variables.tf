@@ -51,5 +51,5 @@ variable "create_airbyte_connection" {
 
 variable "airbyte_workspace_id" {
   description = "Airbyte workspace id"
-  default = ""
+  default     = ""
 }

@@ -1,7 +1,7 @@
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:
-  name: {{ .Values.clusterName }}
+  name: {{ .Values.cluster_name }}
   namespace: {{ .Release.Namespace }}
 spec:
   kafka:
@@ -30,10 +30,10 @@ spec:
         configuration:
           class: nginx
           bootstrap:
-            host: {{ .Values.bootstrapHost }}
+            host: {{ .Values.bootstrap_host }}
           brokers:
           - broker: 0
-            host: {{ .Values.brokersHost }}
+            host: {{ .Values.broker_host }}
     resources:
       requests:
         memory: 1Gi

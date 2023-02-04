@@ -1,6 +1,6 @@
 data "airbyte_workspace" "airbyte_workspace_pg" {
   count = var.create_airbyte_connection ? 1 : 0
-  id = var.airbyte_workspace_id
+  id    = var.airbyte_workspace_id
 }
 
 # Super basic custom source
