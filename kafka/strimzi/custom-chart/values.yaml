@@ -1,0 +1,8 @@
+cluster_name: my-cluster
+bootstrap_host: ${bootstrap_host}
+broker_host: ${broker_host}
+deply_kafka_connect: ${deply_kafka_connect}
+kafka_connect_output_inmage: ${kafka_connect_output_inmage}
+kafka_connect_name: my-connect
+kafkaConnectAwsAccessKey: awsAccessKey
+kafkaConnectAwsSecretAccessKey: awsSecretAccessKey

@@ -1,19 +1,19 @@
 output "db_name" {
   description = "Database name"
-  value       = var.db_name
+  value       = local.db_name
 }
 
 output "db_user" {
   description = "Database user"
-  value       = var.db_user
+  value       = local.db_user
 }
 
 output "db_password" {
   description = "Database password"
-  value       = var.db_password
+  value       = local.db_password
 }
 
 output "db_host" {
   description = "Database host"
-  value       = "${var.name}-pg-db.${var.namespace}"
+  value       = local.db_host
 }
