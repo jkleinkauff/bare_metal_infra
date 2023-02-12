@@ -29,9 +29,9 @@ resource "helm_release" "kafka" {
   values = [
     templatefile("${path.module}/strimzi/custom-chart/values.yaml",
       {
-        bootstrap_host = local.bootstrap_host
-        broker_host    = local.broker_host
-        deply_kafka_connect = var.deply_kafka_connect
+        bootstrap_host              = local.bootstrap_host
+        broker_host                 = local.broker_host
+        deply_kafka_connect         = var.deply_kafka_connect
         kafka_connect_output_inmage = var.kafka_connect_output_inmage
     })
   ]

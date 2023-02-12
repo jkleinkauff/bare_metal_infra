@@ -17,3 +17,8 @@ output "db_host" {
   description = "Database host"
   value       = local.db_host
 }
+
+output "db_host_replica" {
+  description = "Database host"
+  value       = local.db_host_replica
+}
