@@ -21,5 +21,4 @@ resource "helm_release" "pg_db" {
   ]
   timeout          = 600
   disable_webhooks = true
-
 }
